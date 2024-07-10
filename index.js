@@ -39,7 +39,7 @@ function createLogo(data) {
   ${shapeSVG}
   <text x="150" y="150" font-size="60" text-anchor="middle" fill="black">${data.characters}</text>
 </svg>`;
-
+}
 
 // Writes data received from createLogo to file in SVG format
 function writeToFile(fileName, data) {
@@ -52,7 +52,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then(data => {
         //makes sure the user enters no more than 3 characters
-        if (questions.characters.length > 3) {
+        if (data.characters.length > 3) {
             console.log("No more than 3 characters please!");
         } else {
             console.log("The input has 3 or fewer characters.");
