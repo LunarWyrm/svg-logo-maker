@@ -61,7 +61,6 @@ function init() {
 
         console.log("init function has turned on.");
 
-        // validator for hex or a color
     })
 }
 
