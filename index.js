@@ -32,6 +32,7 @@ const shapeGenerators = {
 
 
   // Takes what shape the user wants and accesses the shapeGenerators to create the shape
+  // Takes what shape the user wants and access the shapeGenerators to create the shape
 function createLogo(data) {
     const shapeSVG = shapeGenerators[data.shape](data.color);
     return `
